@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: rgb(181, 166, 166);
+    font-size: 18px;
+    transition: 200ms;
+
+
+    user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background: #f4dcdc;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+
+.close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover{
+    background-color: #d43429;      
+    color: aqua;
+    text-align: center;
+}
+
+.header::after{
+    content: '';
+    display: table;
+    clear: both;
+    background-color: red;
+}
+
+input {
+    margin: 0px;
+    border: none;
+    border-radius: 0px;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 20px;
+
+}
+
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+  
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+.title {
+    background-color: red;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+.check_box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.check_box > span {
+    display: none;
+}
+
+
+li.checked > .check_box > span {
+    display: inline;
+}
